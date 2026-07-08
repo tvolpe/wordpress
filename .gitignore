@@ -1,0 +1,15 @@
+# WordPress config and secrets
+wp-config.php
+
+# Uploads
+wp-content/uploads/
+
+# Upgrade/backup artifacts
+wp-content/upgrade/
+wp-content/backup*/
+
+# Cache
+wp-content/cache/
+
+# OS files
+.DS_Store
