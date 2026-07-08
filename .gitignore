@@ -1,15 +1,78 @@
-# WordPress config and secrets
+# WordPress config #
+#####################
 wp-config.php
+wp-config-local.php
 
-# Uploads
-wp-content/uploads/
+# Uploads #
+###########
+/wp-content/uploads/
 
-# Upgrade/backup artifacts
-wp-content/upgrade/
-wp-content/backup*/
+# WP Engine managed files #
+############################
+# These are injected automatically on WP Engine servers - don't commit them
+/wp-content/mu-plugins/mu-plugin.php
+/wp-content/mu-plugins/wpe-*
+/wp-content/mu-plugins/slt-*
+/wp-content/mu-plugins/stop-heartbeat.php
+/wp-content/object-cache.php
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
 
-# Cache
-wp-content/cache/
+# Cache / backups / upgrade artifacts #
+########################################
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/updraft/
+/wp-content/backupwordpress-*/
 
-# OS files
+# Generated sitemaps #
+#######################
+sitemap.xml
+sitemap.xml.gz
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+!wp-includes/**/*.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# Node #
+########
+node_modules/
+
+# Windows OS generated files #
+###############################
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS generated files #
+##########################
 .DS_Store
+._*
+
+# Editor #
+##########
+.vscode/
+*.un~
+
+# SASS #
+########
+.sass-cache/
